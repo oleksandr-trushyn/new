@@ -1,0 +1,116 @@
+.header{
+    width: 100%;
+    height: 49px;
+    background: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.container{
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.text1{
+    text-transform: uppercase;
+    color: #FFB800;
+}
+.text2{
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    padding-left: 5px;
+}
+.page{
+    overflow: hidden;
+}
+.intro{
+    width: 100%;
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 820px;
+        position: relative;
+}
+.text3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0 auto;
+    display: block;
+}
+.btn{
+    background: linear-gradient(0deg, #130999 -0.01%, #174D8F 35.01%, #1A7F87 64.91%, #1C9E83 87.44%, #1DAA81 99.99%);
+    padding: 8px 60px 8px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.footer{
+    width: 100%;
+    height: 49px;
+    background: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.text4{
+    color: #FFFFFF;
+}
+.container_footer{
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: grid;
+}
+.sos{
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 50px solid #3683F7;
+
+
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+    .stage {
+        border-bottom: 3px solid #444;
+        height: 185px;
+        width: 100%;
+    }
+    .box {
+        align-self: flex-end;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        background-color: #3683F7;
+        height: 135px;
+        transform-origin: bottom;
+        width: 160px;
+    }
+    .bounce-1 {
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+    }
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-100px); }
+        100% { transform: translateY(0); }
+    }
