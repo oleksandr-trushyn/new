@@ -78,39 +78,38 @@
     margin: 0 auto;
     display: grid;
 }
-.sos{
-    width: 0;
+.stage {
+    border-bottom: 3px solid #444;
+    height: 185px;
+    width: 100%;
+}
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+.house {
+    height: 135px;
+    width: 160px;
+    margin: 35px 20px 35px 0;
+    background: #3683F7;;
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.house::before {
+    content: "";
     height: 0;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 135px;
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;
     border-top: 50px solid #3683F7;
-
-
-    align-self: flex-end;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
 }
-    .stage {
-        border-bottom: 3px solid #444;
-        height: 185px;
-        width: 100%;
-    }
-    .box {
-        align-self: flex-end;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        background-color: #3683F7;
-        height: 135px;
-        transform-origin: bottom;
-        width: 160px;
-    }
-    .bounce-1 {
-        animation-name: bounce-1;
-        animation-timing-function: linear;
-    }
-    @keyframes bounce-1 {
-        0%   { transform: translateY(0); }
-        50%  { transform: translateY(-100px); }
-        100% { transform: translateY(0); }
-    }
